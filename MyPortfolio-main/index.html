@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayesh Sasane| Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <div class="background">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="cloud cloud4"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-text">
+                    <span>Tech</span>
+                    <span>Jayesh</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+              <!--  <a href="#about">About</a>   -->  
+              <!--  <a href="#experience">Experience</a>>  --> 
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mode-toggle">
+                <i class='bx bx-moon'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Jayesh Sasane</span></h1>
+                    <div class="animated-text">
+                        <span class="profession"></span>
+                    </div>
+                    <p>Java FullStack Developer</p>
+                   <!-- <p>Crafting digital solutions with Java excellence</p>  -->
+                    <div class="cta-buttons">
+                        <button onclick="location.href='#contact'" class="cta-btn primary-btn">Get in Touch</button>
+                        <button onclick="location.href='#projects'" class="cta-btn primary-btn">View Work</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="blob"></div>
+                   <!-- <img src="jayesh_dp.jpg" alt="Jayesh Sasane">  --> 
+                    <img src="james.jpg" alt="Jayesh Sasane">  
+                 
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section 
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>As a passionate Java Developer, I thrive on transforming complex problems into elegant solutions. With a keen eye for detail and a commitment to clean code, I specialize in building robust backend systems and scalable applications. My journey in software development is driven by an insatiable curiosity and a desire to create technology that makes a meaningful impact.</p>
+                </div>
+            </div>
+        </section>  -->
+
+        <!-- Education section -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+            <h3>Education</h3>
+            <div class="timeline-item">
+                <div class="date">2021-2025</div>
+                <h4>Bachelor of Engineering in Information Technology</h4>
+                <p>Sinhagad Academy of Engineering, Kondhwa - 6.92 CGPA</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2020-2021</div>
+                <h4>HSC Science</h4>
+                <p>Hashu Adhvani College, Rashin - 83.67%</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2018-20219</div>
+                <h4>SSC</h4>
+                <p>Shri Jagadamba Vidylaya,Rashin - 73.80%</p>
+            </div>
+            
+        </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bxl-java'></i>
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-data'></i>
+                    <h3>MySQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+              <div class="skill-card">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>DSA in Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div> 
+               <div class="skill-card">
+                    <i class='bx bxl-html5'></i>
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+               <div class="skill-card">
+                    <i class='bx bxl-css3'></i>
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+              <div class="skill-card">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+           
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="vocal.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Vocal Mail An Accessible Email System for the Visually Impaired</h3>
+                       <!-- <p>Digital note management system built with Java & MySQL</p>  -->
+                        <div class="project-links">
+                            <a href="https://github.com/Jayesh14007/-Vocal-Mail-An-Accessible-Email-System-for-the-Visually-Impaired" class="github-link"><i class='bx bxl-github'></i></a>
+                            <!-- <a href="https://github.com/Tech-SahilSh/JAVA-Project/tree/main/Enotes2" class="live-link"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                    </div>
+                </div>
+               <div class="project-card">
+                    <div class="project-image">
+                        <img src="enote.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Note Application</h3>
+                       <!-- <p>Digital note management system built with Java & MySQL</p> -->
+                        <div class="project-links">
+                            <a href="https://github.com/Jayesh14007/E-Note-Application" class="github-link"><i class='bx bxl-github'></i></a>
+                            <!-- <a href="https://github.com/Tech-SahilSh/JAVA-Project/tree/main/Enotes2" class="live-link"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Book4GHR.png" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>File Packer And Unpacker-in Java</h3>
+                      <!--  <p>Book Selling Website design with HTML,CSS & JS</p>   -->
+                        <div class="project-links">
+                            <a href="https://github.com/Jayesh14007/FILE-PACKER-AND-UNPACKER-IN-JAVA" class="github-link"><i class='bx bxl-github'></i></a>
+                            <!-- <a href="https://github.com/Tech-SahilSh/CSS3" class="live-link"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="book.png" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Bookstore</h3>
+                       <!--  <p>Digital note management system built with Java & MySQL</p>  -->
+                        <div class="project-links">
+                            <a href="https://github.com/Jayesh14007/Bookstore_-App" class="github-link"><i class='bx bxl-github'></i></a>
+                            <!-- <a href="https://github.com/Tech-SahilSh/JAVA-Project/tree/main/Enotes2" class="live-link"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class='bx bx-envelope'></i>
+                            <span>jayeshxsasane14@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class='bx bx-phone'></i>
+                            <span>+91 8080336332</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="social-links-container">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jayesh-sasane-926955268/" target="_blank" class="social-btn">
+                <i class='bx bxl-linkedin'></i>
+                LinkedIn
+            </a>
+            <a href="https://github.com/Jayesh14007" target="_blank" class="social-btn">
+                <i class='bx bxl-github'></i>
+                GitHub
+            </a>
+            <a href="mailto:jayeshxsasane14@gmail.com?subject=Portfolio Contact" class="social-btn">
+                <i class='bx bx-envelope'></i>
+                Email
+            </a>
+            <a href="tel:+918080336332" class="social-btn">
+                <i class='bx bx-phone'></i>
+                Call
+            </a>
+            <a href="Jayesh_Resume.pdf" download class="social-btn download-btn">
+                <i class='bx bx-download'></i>
+                Resume
+            </a>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html> 

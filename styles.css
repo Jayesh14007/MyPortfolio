@@ -474,9 +474,9 @@ nav {
     background: var(--secondary-color);
 }
 
-/* Contact Section */
+/* Contact Section  max-width 12000 */
 .contact-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
     display: grid;
@@ -586,7 +586,7 @@ nav {
     margin: 4rem 0 2rem;
 }
 
-/* Responsive Design */
+/* Responsive Design */   
 @media (max-width: 768px) {
     .nav-links {
         display: none;

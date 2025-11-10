@@ -157,15 +157,7 @@ contactForm.addEventListener('submit', function(e) {
         });
 });
 
-// Parallax Effect for Hero Section
-// document.addEventListener('mousemove', (e) => {
-//     const hero = document.querySelector('.hero');
-//     const speed = 5;
-//     const x = (window.innerWidth - e.pageX * speed) / 100;
-//     const y = (window.innerHeight - e.pageY * speed) / 100;
-    
-//     hero.style.transform = `translateX(${x}px) translateY(${y}px)`;
-// });
+
 
 // Experience Card Animation
 const experienceCard = document.querySelector('.experience-card');
